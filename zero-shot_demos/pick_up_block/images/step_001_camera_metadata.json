@@ -1,0 +1,39 @@
+{
+  "camera_type": "orbbec-gemini305",
+  "captured_image": "<PROJECT_ROOT>/output/tasks/20260922_234358_843/images/step_001.png",
+  "captured_depth": "<PROJECT_ROOT>/output/tasks/20260922_234358_843/images/step_001_depth.png",
+  "color_shape": [
+    800,
+    1280,
+    3
+  ],
+  "depth_shape": [
+    800,
+    1280
+  ],
+  "depth_scale_m": 0.00010000000149011611,
+  "intrinsics": {
+    "fx": 614.2376098632812,
+    "fy": 614.0444946289062,
+    "cx": 641.3226318359375,
+    "cy": 399.6734619140625,
+    "ppx": 641.3226318359375,
+    "ppy": 399.6734619140625,
+    "width": 1280,
+    "height": 800,
+    "coeffs": [
+      -1.0608863830566406,
+      0.5625966191291809,
+      1.6738746126065962e-05,
+      1.997577419388108e-05,
+      -0.10470426082611084,
+      -1.0414334535598755,
+      0.5360920429229736,
+      -0.09462356567382812
+    ]
+  },
+  "metadata": {
+    "color_format": "OBFormat.RGB",
+    "aligned_depth_to_color": true
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "info_key": "ur3-orbbec-gemini305-1280*800",
+  "tcp_key": "ur3-robotiq-2f-85",
+  "origin_rgb_pixel": {
+    "u": 689.0,
+    "v": 714.0
+  },
+  "origin_depth_pixel": {
+    "u": 689,
+    "v": 714
+  },
+  "origin_depth_m": 0.12320000183582305,
+  "origin_raw_depth_value": 1232.0,
+  "valid_depth_count": 441,
+  "origin_depth_camera_m": [
+    0.009562833260319455,
+    0.06306551138877749,
+    0.12320000183582305
+  ],
+  "origin_camera_m": [
+    0.007781783235672444,
+    0.08471541388887417,
+    0.14192503890427255
+  ],
+  "tcp_center_camera_m": [
+    0.007781783235672444,
+    0.08471541388887417,
+    0.14192503890427255
+  ],
+  "tcp_z_axis_camera": [
+    -0.0002348754515432885,
+    -0.0051674483684026355,
+    0.9999866210659432
+  ],
+  "tcp_z_sign": 1.0,
+  "axis_length_m": 0.155,
+  "tcp_z_offset_m": 0.155,
+  "z_endpoint_source": "no_surface_hit",
+  "frame_drawn": true,
+  "z_axis_drawn": false,
+  "z_endpoint_camera_m": null,
+  "z_endpoint_pixel_exact": null,
+  "z_endpoint_pixel_drawn": null,
+  "z_axis_scaled_for_visibility": false,
+  "tcp_z_distance_to_surface": {
+    "available": false,
+    "description": "Distance from the TCP-center origin to the nearest visible real-world depth surface along the shown +TCP Z axis; recomputed from the current aligned RGB-D image.",
+    "axis_label": "+TCP Z",
+    "reason": "No valid depth surface was found within the TCP Z ray search tube.",
+    "valid_depth_count": 668054,
+    "candidate_count": 0,
+    "min_axis_distance_m": 0.005,
+    "max_axis_distance_m": 3.0,
+    "axis_tolerance_m": 0.015
+  },
+  "depth_scale_m": 0.00010000000149011611,
+  "intrinsics": {
+    "fx": 614.2376098632812,
+    "fy": 614.0444946289062,
+    "cx": 641.3226318359375,
+    "cy": 399.6734619140625
+  },
+  "calibration": "<PROJECT_ROOT>/hand-eye-caliberation/hand-eye-info/ur3-orbbec-gemini305.json"
+}

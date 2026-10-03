@@ -1,0 +1,12 @@
+{
+  "camera_type": "realsense-d435i",
+  "role": "external_view",
+  "skipped": true,
+  "error": "Frame didn't arrive within 5000",
+  "camera_kwargs": {
+    "warmup_frames": 30,
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  }
+}

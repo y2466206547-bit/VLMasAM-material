@@ -1,0 +1,34 @@
+{
+  "mode": "first-recent",
+  "recent_turns": 1,
+  "history": [
+    {
+      "step": 1,
+      "prompt": "<PROJECT_ROOT>/output/tasks/20260923_015015_925/prompt_001.txt",
+      "response": "<PROJECT_ROOT>/output/tasks/20260923_015015_925/vlm_response_001.txt",
+      "images": [
+        "<PROJECT_ROOT>/output/tasks/20260923_015015_925/images/step_001.png",
+        "<PROJECT_ROOT>/output/tasks/20260923_015015_925/images/step_001_tcp_center_frame.png"
+      ]
+    },
+    {
+      "step": 7,
+      "prompt": "<PROJECT_ROOT>/output/tasks/20260923_015015_925/prompt_007.txt",
+      "response": "<PROJECT_ROOT>/output/tasks/20260923_015015_925/vlm_response_007.txt",
+      "images": [
+        "<PROJECT_ROOT>/output/tasks/20260923_015015_925/images/step_007.png",
+        "<PROJECT_ROOT>/output/tasks/20260923_015015_925/images/step_007_tcp_center_frame.png"
+      ]
+    }
+  ],
+  "current": {
+    "step": 8,
+    "prompt": "<PROJECT_ROOT>/output/tasks/20260923_015015_925/prompt_008.txt",
+    "response": "<PROJECT_ROOT>/output/tasks/20260923_015015_925/vlm_response_008.txt",
+    "images": [
+      "<PROJECT_ROOT>/output/tasks/20260923_015015_925/images/step_008.png",
+      "<PROJECT_ROOT>/output/tasks/20260923_015015_925/images/step_008_tcp_center_frame.png"
+    ]
+  },
+  "history_labels_added_by_chatbot": true
+}

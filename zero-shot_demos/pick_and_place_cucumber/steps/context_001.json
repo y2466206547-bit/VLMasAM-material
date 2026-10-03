@@ -1,0 +1,15 @@
+{
+  "mode": "first-recent",
+  "recent_turns": 1,
+  "history": [],
+  "current": {
+    "step": 1,
+    "prompt": "<PROJECT_ROOT>/output/tasks/20260923_015015_925/prompt_001.txt",
+    "response": "<PROJECT_ROOT>/output/tasks/20260923_015015_925/vlm_response_001.txt",
+    "images": [
+      "<PROJECT_ROOT>/output/tasks/20260923_015015_925/images/step_001.png",
+      "<PROJECT_ROOT>/output/tasks/20260923_015015_925/images/step_001_tcp_center_frame.png"
+    ]
+  },
+  "history_labels_added_by_chatbot": true
+}

@@ -1,0 +1,89 @@
+{
+  "info_key": "ur3-orbbec-gemini305-1280*800",
+  "tcp_key": "ur3-robotiq-2f-85",
+  "origin_rgb_pixel": {
+    "u": 689.0,
+    "v": 714.0
+  },
+  "origin_depth_pixel": {
+    "u": 689,
+    "v": 714
+  },
+  "origin_depth_m": 0.2903000043258071,
+  "origin_raw_depth_value": 2903.0000000000005,
+  "valid_depth_count": 33,
+  "origin_depth_camera_m": [
+    0.02253320207362612,
+    0.14860323016365345,
+    0.2903000043258071
+  ],
+  "origin_camera_m": [
+    0.007781783235672444,
+    0.08471541388887417,
+    0.14192503890427255
+  ],
+  "tcp_center_camera_m": [
+    0.007781783235672444,
+    0.08471541388887417,
+    0.14192503890427255
+  ],
+  "tcp_z_axis_camera": [
+    -0.0002348754515432885,
+    -0.0051674483684026355,
+    0.9999866210659432
+  ],
+  "tcp_z_sign": 1.0,
+  "axis_length_m": 0.155,
+  "tcp_z_offset_m": 0.155,
+  "z_endpoint_source": "nearest_surface_along_tcp_z",
+  "z_axis_drawn": true,
+  "z_endpoint_camera_m": [
+    0.007744844009512609,
+    0.08390272127797987,
+    0.2991944840917181
+  ],
+  "z_endpoint_pixel_exact": {
+    "u": 657.2225722630099,
+    "v": 571.8691634542475
+  },
+  "z_endpoint_pixel_drawn": {
+    "u": 657.2225722630099,
+    "v": 571.8691634542475
+  },
+  "z_axis_scaled_for_visibility": false,
+  "tcp_z_distance_to_surface": {
+    "available": true,
+    "description": "Distance from the TCP-center origin to the nearest visible real-world depth surface along the shown +TCP Z axis; recomputed from the current aligned RGB-D image.",
+    "axis_label": "+TCP Z",
+    "distance_m": 0.1572715493131328,
+    "distance_cm": 15.727154931313281,
+    "surface_camera_m": [
+      -0.00015726157364505934,
+      0.0825613887948013,
+      0.29940000446140763
+    ],
+    "surface_rgb_pixel": {
+      "u": 641.0,
+      "v": 569.0
+    },
+    "surface_depth_pixel": {
+      "u": 641,
+      "v": 569
+    },
+    "perpendicular_error_m": 0.008014908453081705,
+    "valid_depth_count": 576678,
+    "candidate_count": 2489,
+    "cluster_count": 154,
+    "min_axis_distance_m": 0.005,
+    "max_axis_distance_m": 3.0,
+    "axis_tolerance_m": 0.015
+  },
+  "depth_scale_m": 0.00010000000149011611,
+  "intrinsics": {
+    "fx": 614.2376098632812,
+    "fy": 614.0444946289062,
+    "cx": 641.3226318359375,
+    "cy": 399.6734619140625
+  },
+  "calibration": "<PROJECT_ROOT>/hand-eye-caliberation/hand-eye-info/ur3-orbbec-gemini305.json"
+}

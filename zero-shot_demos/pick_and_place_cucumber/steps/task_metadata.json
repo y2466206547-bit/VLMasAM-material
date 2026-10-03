@@ -1,0 +1,55 @@
+{
+  "instruction": "Pick up the cucumber and place it on the plate",
+  "created_at": "2026-09-23T01:50:15",
+  "camera_type": "orbbec-gemini305",
+  "gripper": "robotiq-2f-85",
+  "ur_motion_mode": "movej",
+  "gripper_connection": {
+    "gripper_backend": "native"
+  },
+  "camera_resolution": null,
+  "camera_kwargs": {
+    "warmup_frames": 15,
+    "width": 1280,
+    "height": 800,
+    "fps": 5,
+    "require_depth": true
+  },
+  "external_view_enabled": true,
+  "external_camera_type": "realsense-d435i",
+  "external_camera_kwargs": {
+    "warmup_frames": 30,
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "require_external_view": false,
+  "camera_switch_delay_s": 1.0,
+  "record_motion": true,
+  "record_fps": 5.0,
+  "prompt_template": "prompts/prompt_paper.txt",
+  "motion_output_format": "pipe",
+  "model": "qwen/qwen3.8-27b",
+  "base_url": "https://openrouter.ai/api/v1",
+  "enable_thinking": true,
+  "chat_connection_mode": "first-recent",
+  "chat_recent_turns": 1,
+  "max_task_steps": 40,
+  "end_effector_key": "ur3-orbbec-gemini305-1280*800",
+  "end_effector_info": "<PROJECT_ROOT>/utils/end-effector-info.json",
+  "end_effector_marker_enabled": true,
+  "tcp_info": "<PROJECT_ROOT>/utils/tcp-info.json",
+  "tcp_key": "ur3-robotiq-2f-85",
+  "tcp_axis_length_m": null,
+  "tcp_z_sign": 1.0,
+  "tcp_frame": {
+    "depth_radius": 10,
+    "min_depth_m": 0.05,
+    "max_depth_m": 3.0,
+    "z_distance_min_axis_m": 0.005,
+    "z_distance_max_axis_m": null,
+    "z_distance_axis_tolerance_m": 0.015,
+    "allow_depth_resize": false
+  },
+  "conda_env": "manip-agent"
+}

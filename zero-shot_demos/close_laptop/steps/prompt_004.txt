@@ -1,0 +1,48 @@
+Control a robotic arm using the current visual observations. The wrist camera is mounted near a parallel-jaw gripper, and the processed image marks the TCP control point and coordinate axes; these graphics are not objects to grasp.
+
+Express all motion commands in the TCP coordinate frame attached to the gripper. Its origin is the TCP center:
+- X (red): runs across the gap between the two fingers, along the gripper's opening and closing direction.
+- +Z (blue): points forward along the fingers, from the gripper body toward the fingertips.
+- Y (green): is perpendicular to the plane formed by X and Z.
+
+The colored arrows indicate the positive directions. The axes form a right-handed coordinate frame: +X cross +Y = +Z. Negative directions are opposite to the corresponding positive directions.
+
+These arrows are projections of the gripper's 3D axes onto the image, not the camera's image axes. The axes are perpendicular in 3D, but their projections may appear tilted or non-perpendicular.
+
+Output one incremental action, expressing both the translation direction and rotation axis in the TCP frame before the action is executed. Translation specifies the displacement of the TCP center; rotation specifies the orientation change about that center as a unit axis and a signed angle.
+
+Image order when multiple images are provided:
+1. Raw wrist-camera image.
+2. Processed wrist-camera image with the TCP-center coordinate frame.
+3. External overview image, if provided: use it to understand the global scene, object identity, occlusions, and task completion, not to define motion axes.
+
+Current TCP Z distance information:
+- Description: Distance from the TCP-center origin to the nearest visible real-world depth surface along the shown +TCP Z axis; recomputed from the current aligned RGB-D image.
+- Current value: 2.54 cm (0.0254 m) along +TCP Z.
+- Meaning: This is the approximate current Z clearance from the TCP-center origin to the nearest visible depth surface along the blue TCP Z direction. Keep approach motions along this Z direction below this value unless intentional contact or grasp closure is required. Search tube radius: 1.5 cm.
+
+The blue endpoint marks the visible surface point used to estimate clearance along TCP +Z, not a fixed axis length. The estimate may refer to a surface other than the target and does not guarantee clearance for the entire gripper. Use it together with finger-object alignment to judge grasping range. 
+
+Current gripper state:
+Current measured normalized opening: 0.1020 (0.0=fully closed, 1.0=fully open).
+Gripper opening ranges continuously from 0 (fully closed) to 1 (fully open). The input is the measured opening; the output gripper_state is the desired opening, not a change in opening.
+
+Task:
+close the laptop
+
+Return one line in the exact format below, without spaces, unit suffixes, or extra text. task_state must be the integer 0 or 1; all other values must be finite and include an explicit + or - sign and exactly two decimal places.
+
+Strict output format:
+task_state|direction_x,direction_y,direction_z,distance_cm|axis_x,axis_y,axis_z,angle_deg|gripper_state
+
+Rules:
+- Set task_state to 1 only when current observations confirm completion of the entire task; otherwise use 0.
+- If task_state is 1, output a no-op: zero translation, zero rotation, and an unchanged gripper state.
+- For nonzero translation or rotation, normalize the direction or axis to a 3D unit vector before rounding its components.
+- distance_cm is the nonnegative translation distance in centimeters.
+- If no translation is needed, use +0.00,+0.00,+0.00,+0.00 for the translation field.
+- angle_deg is the signed rotation angle in degrees, following the right-hand rule around the specified axis.
+- If no rotation is needed, use +0.00,+0.00,+1.00,+0.00 for the rotation field.
+
+Example:
+0|+0.40,-0.10,+0.91,+6.00|+0.00,+0.00,+1.00,-45.00|+1.00

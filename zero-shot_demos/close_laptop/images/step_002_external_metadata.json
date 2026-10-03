@@ -1,0 +1,29 @@
+{
+  "camera_type": "realsense-d435i",
+  "captured_image": "<PROJECT_ROOT>/output/tasks/20261004_041329_960/images/step_002_external.png",
+  "intrinsics": {
+    "fx": 609.13134765625,
+    "fy": 609.4969482421875,
+    "cx": 318.5121154785156,
+    "cy": 251.35728454589844,
+    "ppx": 318.5121154785156,
+    "ppy": 251.35728454589844,
+    "width": 640,
+    "height": 480,
+    "coeffs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "role": "external_view",
+  "skipped": false,
+  "camera_kwargs": {
+    "warmup_frames": 30,
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  }
+}
