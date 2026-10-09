@@ -1,0 +1,16 @@
+{
+  "gripper_max_width_m": 0.08,
+  "max_translation_cm": 12.0,
+  "max_rotation_deg": 60.0,
+  "table_height_m": 0.75,
+  "workspace_x_m": [-0.35, 0.45],
+  "workspace_y_m": [-0.42, 0.42],
+  "workspace_z_above_table_m": [0.013, 0.65],
+  "action_duration_s": 1.4,
+  "arm_duration_s": 2.0,
+  "gripper_duration_s": 1.0,
+  "initial_pose_duration_s": 3.0,
+  "action_settle_s": 0.5,
+  "completion_settle_s": 1.5,
+  "force_backoff_duration_s": 0.5
+}

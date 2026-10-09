@@ -1,0 +1,30 @@
+{
+    "object_keypoints": {
+        "link_contact_point": [
+            0.4884941929987429,
+            -19.878080824392985,
+            3.402872200188214
+        ],
+        "base_contact_point": [
+            0.4884941929987429,
+            -19.878080824392985,
+            3.402872200188214
+        ]
+    },
+    "object_scale": [
+        0.006307922073225962,
+        0.006307922073225962,
+        0.006307922073225962,
+        1.0
+    ],
+    "object_name": "nightstand_0000_1",
+    "object_usd": "assets/drawer_final/nightstand_0000_1/instance.usd",
+    "object_joint_path": "/nightstand_0000_1/instance/contact_link_prismatic1",
+    "object_link_path": "/nightstand_0000_1/instance/contact_link1",
+    "object_base_path": "/nightstand_0000_1/instance/base",
+    "object_prim_path": "/nightstand_0000_1",
+    "object_link0_move_axis": "y",
+    "object_link0_contact_axis": "-x",
+    "object_base_front_axis": "-y",
+    "joint_index": 1
+}
